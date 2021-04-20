@@ -9,27 +9,18 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
-}
-
-a {
-  color: #149ddd;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #37b3ed;
-  text-decoration: none;
+  font-family: "Times New Roman", Arial;
+  color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roma";
 }
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+/*Botão pra subir*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -37,22 +28,22 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #9b7160;
+  background: #5c4237;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
 }
-
+/*Símbolo no botão pra subir*/
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
 }
-
+/*Cor ao passar por cima do botão de subir*/
 .back-to-top:hover {
-  background: #9d7160;
-  color: #fff;
+  background: #3a2b24;
+  color: #f45d22;
 }
 
 .back-to-top.active {
@@ -63,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/*Barra lateral*/
 #header {
   position: fixed;
   top: 0;
@@ -76,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   background:  #3a2b24;
   overflow-y: auto;
 }
-
+/*Cor em volta da imagem de perfil*/
 #header .profile img {
   margin: 15px auto;
   display: block;
@@ -91,14 +83,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman";
 }
-
+/*nome de usuário*/
 #header .profile h1 a, #header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
-
+/*Cor em volta das redes sociais*/
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -113,10 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
   transition: 0.3s;
 }
-
+/*Cor ao passar por cima das redes sociais*/
 #header .profile .social-links a:hover {
-  background: #aa8171;
-  color: #fff;
+  background: #5c4237;
+  color: #3a2b24;
   text-decoration: none;
 }
 
@@ -151,32 +143,32 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
 }
-
+/*Cor nome das páginas*/
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
 }
-
+/*Cor dos símbolos das páginas*/
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: #694a46;
+  color: #fff;
 }
-
+/*Cor ao passar por cima dos nomes das páginas*/
 .nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
-
+/*Cor ao passar por cima dos símbolos das páginas*/
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu li:hover > a i {
-  color: #aa8171;
+  color: #5c4237;
 }
-
+/*Símbolo para aparecer a barra lateral*/
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -187,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #9b7160;
+  background-color: #5c4237;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -210,14 +202,16 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/*Imagem de fundo - Principal*/
 #hero {
-  width: 100%;
-  height: 120vh;
-  left: 100px;
-  background: url("../img/mapaquilombolasrn.jpg") top center;
+  width: 100;
+  height: 100vh;
+  left: 0;
+  background: url("../img/fundo.jpg") top center;
   background-size: cover;
+  
 }
-
+/*Cor por cima da imagem principal*/
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
@@ -234,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   min-width: 300px;
 }
-
+/*Cor Quilimbo.Ong - Principal*/
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
@@ -242,19 +236,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 56px;
   color: #fff;
 }
-
+/*Quilombo.Ong - Principal*/
 #hero p {
-  color: #fff;
+  color: #f45d22;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, "Times New Roman";
 }
-
+/*Frase de baixo - Principal*/
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #5c4237;
 }
 
 @media (min-width: 1024px) {
@@ -278,11 +272,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+/*Cor de fundo alternado 1*/
 section {
   padding: 60px 0;
-  overflow: hidden;
+  background-color: #f5f8fd;
 }
-
+/*Cor de fundo alternado 2*/
 .section-bg {
   background: #f5f8fd;
 }
@@ -290,29 +285,30 @@ section {
 .section-title {
   padding-bottom: 30px;
 }
-
+/*Tópicos*/
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #3a2b24;
 }
-
+/*Linha dos tópicos*/
 .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #3a2b24;
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
+  font-family: Arial;
 }
 
 /*--------------------------------------------------------------
@@ -321,12 +317,15 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #000
 }
+
+
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  font-family: Arial;
 }
 
 .about .content ul li {
@@ -342,12 +341,13 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #3a2b24;
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+  font-family: Arial;
 }
 
 /*--------------------------------------------------------------
@@ -1045,14 +1045,14 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: #fff;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #2b1f1a;
+  background: #3a2b24;
 }
 
 #footer .copyright {
@@ -1063,7 +1063,7 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: #fff;
 }
 
 @media (max-width: 1199px) {
